@@ -5,6 +5,8 @@ const btnColorStart = document.querySelector('button[data-start]');
 
 const btnColorStop = document.querySelector('button[data-stop]');
 
+let timerId = null;
+
 btnColorStart.addEventListener('click', () => {
   timerId = setInterval(() => {
     const randomColor = getRandomHexColor();
